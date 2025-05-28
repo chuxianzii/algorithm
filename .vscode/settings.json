@@ -63,5 +63,8 @@
         "compare": "cpp",
         "concepts": "cpp",
         "algorithm": "cpp"
+    },
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && mkdir -p ../target && /usr/bin/clang++ $fileName -o ../target/$fileNameWithoutExt -std=c++17 && ../target/$fileNameWithoutExt"
     }
 }
