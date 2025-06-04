@@ -1,6 +1,10 @@
 # algorithm
 笔试算法题
 
+## 方法
+- 双指针：快慢指针、滑动窗口
+- 前缀和
+
 ## 细节
 - 对于数组大小使用`const auto`来定义, 因为通过`size()`获取的类型实际上是`size_type`无符号整数类型，转换成`int`可能会溢出
 - 在`for`循环中, 最好使用`<`而不是`<=`
@@ -19,4 +23,6 @@
 - `upper_bound(ForwardIt first, ForwardIt last, const T& value)`
     - 功能: 返回 ​​第一个 > 目标值​​ 的元素的迭代器
     - 如果所有元素都 ≤ 目标值，则返回 `end()`
--
+- `str.substr(size_t pos, size_t len)`
+    - 功能：返回一个新的字符串，包含从pos开始的len个字符
+    - 如果只提供pos，则len默认为字符串末尾
